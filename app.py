@@ -1,9 +1,10 @@
 from flask import Flask
-from process_massivebase_claro import getData
+#proceso base de masivos claro
+from claro_process.massive_base import getData
 
 app = Flask(__name__)
 
-@app.route('/process/<int:iprocId>')
+@app.route('/claro/process/<int:iprocId>')
 def prueba(iprocId):
     if(iprocId == 1):
         return getData()
