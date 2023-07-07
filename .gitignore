@@ -1,3 +1,5 @@
 #ignora entorno virtual python
 /base_masivos_env
 __pycache__
+*.xlsx
+*.csv
